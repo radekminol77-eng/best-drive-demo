@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servis Šumperk | Rezervace online</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <div class="logo">
+            <a href="#top" class="logo-link">
+              <img src="images/logo-footer.png" alt="Logo" class="logo-img" />
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li class="mobile-only">
+              <a
+                href="https://www.rezervacenajisto.cz/bc?servis=1246&lng=cz"
+                class="btn-reserve-mobile"
+                >REZERVOVAT</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <a
+            href="https://www.rezervacenajisto.cz/bc?servis=1246&lng=cz"
+            class="btn-reserve desktop-only"
+            >Rezervace</a
+          >
+          <div class="mobile-menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-badge reveal-top">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Šumperk • Revoluční 20</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="line-1 reveal-left">Rezervujte servis</span>
+              <span class="line-2-wrapper">
+                <span class="highlight-box reveal-scale">ONLINE</span>
+              </span>
+            </h1>
+
+            <p
+              class="hero-description reveal-left"
+              style="transition-delay: 0.2s"
+            >
+              Nejmodernější diagnostika a profesionální přístup. <br />
+              Váš vůz si zaslouží špičkovou péči.
+            </p>
+
+            <div class="hero-btns reveal-left" style="transition-delay: 0.4s">
+              <a
+                href="https://www.rezervacenajisto.cz/bc?servis=1246&lng=cz"
+                class="btn-main btn-primary"
+                >Vybrat termín</a
+              >
+              <a href="#sluzby" class="btn-main btn-outline">Naše služby</a>
+            </div>
+          </div>
+
+          <div class="hero-car-showcase reveal-right">
+            <img src="images/suv-orange.webp" alt="SUV" class="main-car" />
+          </div>
+        </div>
+        <div class="hero-bottom-divider"></div>
+      </section>
+
+      <div class="ui-status-bar reveal">
+        <div class="status-item reveal-top delay-1">
+          <span class="status-label">Lokalita</span>
+          <span class="status-value js-status">Šumperk</span>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-item reveal-top delay-2">
+          <span class="status-label">Nejbližší termín</span>
+          <span class="status-value js-termin">Zítra 8:00</span>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-item reveal-top delay-3">
+          <span class="status-label">Diagnostika</span>
+          <span class="status-value">
+            <span class="pulse-dot" style="color: #2ecc71">●</span> Online Ready
+          </span>
+        </div>
+      </div>
+
+      <section class="services-modern" id="sluzby">
+        <div class="container-modern">
+          <div class="services-header-modern reveal">
+            <div class="label-orange">NAŠE SLUŽBY</div>
+            <h2 class="title-bold">PRÉMIOVÝ SERVIS</h2>
+          </div>
+
+          <div class="services-grid-unified">
+            <div class="service-card-new reveal-left delay-1">
+              <div class="card-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h3>Pneuservis</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Přezutí a vyvážení
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> Opravy defektů</li>
+                <li><i class="fa-solid fa-circle-check"></i> Uskladnění kol</li>
+              </ul>
+              <div class="card-price">od 500 <span>Kč</span></div>
+              <a
+                href="https://www.rezervacenajisto.cz/bc?servis=1246&lng=cz"
+                class="btn-card"
+                >REZERVOVAT →</a
+              >
+            </div>
+
+            <div class="service-card-new featured reveal-right delay-2">
+              <div class="card-icon"><i class="fa-solid fa-car-burst"></i></div>
+              <h3>Autoservis</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Výměna oleje a filtrů
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> Brzdový systém</li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Diagnostika motoru
+                </li>
+              </ul>
+              <div class="card-price">od 890 <span>Kč</span></div>
+              <a
+                href="https://www.rezervacenajisto.cz/bc?servis=1246&lng=cz"
+                class="btn-card"
+                >REZERVOVAT →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-refined" id="kontakt">
+        <div class="container-modern">
+          <div class="contact-grid">
+            <div class="contact-details reveal-left">
+              <span class="label-orange">Najdete nás zde</span>
+              <h2 class="title-italic">KONTAKT & ADRESA</h2>
+              <div class="info-stack">
+                <div class="contact-item reveal delay-1">
+                  <div class="icon-circle">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="text">
+                    <small>ADRESA</small>
+                    <p>Revoluční 2097, Šumperk</p>
+                  </div>
+                </div>
+                <div class="contact-item reveal delay-2">
+                  <div class="icon-circle">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="text">
+                    <small>TELEFON</small>
+                    <p>+420 123 456 789</p>
+                  </div>
+                </div>
+                <div class="contact-item reveal delay-3">
+                  <div class="icon-circle">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div class="text">
+                    <small>OTEVÍRACÍ DOBA</small>
+                    <p>Po–Pá: 7–11:30, 12-16</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-container reveal-right">
+              <div class="map-frame">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.480061557375!2d16.988075777174697!3d50.96071445050302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47121a52afbd0bbd%3A0x675ba955fa9fbc1e!2sBestDrive!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-bottom">
+          <p>© 2026 Servis Šumperk | IČO: 123 456 78</p>
+          <div class="footer-links">
+            <a
+              href="https://radekminol.vercel.app/"
+              target="_blank"
+              class="signature"
+              >MR.</a
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
