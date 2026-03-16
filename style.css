@@ -1226,3 +1226,110 @@ body {
     font-size: 14px; /* Ikona taky trochu menší */
   }
 }
+
+/* =========================================
+   7. HD & SMALL LAPTOP OPTIMIZATION (1024px - 1440px)
+   ========================================= */
+
+@media (max-width: 1440px) {
+  /* Zmenšíme Hero texty, aby se auto a text vešly vedle sebe bez mačkání */
+  .hero-container {
+    gap: 20px;
+    max-width: 1100px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .highlight-box {
+    font-size: clamp(50px, 7vw, 90px); /* Zmenšení masivního nápisu */
+    padding: 5px 15px;
+  }
+
+  .line-1 {
+    font-size: clamp(24px, 4vw, 45px);
+  }
+
+  .hero-description {
+    font-size: 18px; /* Z 21px na 18px pro lepší čitelnost na menším skle */
+    margin-bottom: 30px;
+  }
+
+  .main-car {
+    width: 120%; /* Trochu zmenšíme auto, aby nelezlo do textu */
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Status bar (ty bílé karty pod hero) - zmenšíme mezery */
+  .ui-status-bar {
+    max-width: 95%;
+    padding: 20px 30px;
+    margin-top: -40px;
+  }
+
+  .status-value {
+    font-size: 15px;
+  }
+
+  /* Služby - mírné zmenšení paddingu */
+  .service-card-new {
+    padding: 30px 25px;
+  }
+
+  .title-bold {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Na tabletech/menších laptopech už dáváme grid pod sebe, pokud je text moc dlouhý */
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-description {
+    border-left: none;
+    border-top: 3px solid var(--bd-orange);
+    padding-left: 0;
+    padding-top: 15px;
+    margin: 0 auto 30px;
+  }
+
+  .main-car {
+    width: 80%;
+    margin: 40px auto 0;
+    transform: none;
+  }
+
+  .hero-car-showcase {
+    display: flex;
+    justify-content: center;
+  }
+
+  .line-2-wrapper {
+    justify-content: center;
+  }
+}
+
+/* Oprava pro výšku obrazovky (staré monitory jsou nízké) */
+@media (max-height: 800px) and (min-width: 1025px) {
+  .hero {
+    height: auto;
+    padding-bottom: 120px;
+  }
+
+  .hero-title {
+    margin-bottom: 20px;
+  }
+}
